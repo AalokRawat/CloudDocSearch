@@ -53,7 +53,6 @@ search capabilities. This PRD outlines the key features and requirements of the 
 **2.2.3 Acceptance Criteria:**
 
 - The system shall be able to fetch and process files in .csv, .txt, .pdf, and .docx formats.
-- For files that are not UTF-8 encoded, the system may optionally extract text content using a library like Apache Tika or Tesseract.
 
 #### 2.3 Content Indexing
 
@@ -67,8 +66,7 @@ search capabilities. This PRD outlines the key features and requirements of the 
 
 **2.3.3 Acceptance Criteria:**
 
-- The system shall store indexed content and metadata in a suitable data storage system, such as Elasticsearch or PostgreSQL.
-- The indexing shall support both file content and file metadata (e.g., file name, type, date, etc.).
+- The system shall store indexed content in a suitable data storage system, such as Elasticsearch or PostgreSQL.
 
 ### 3. System Components
 
