@@ -1,13 +1,13 @@
-package com.havo.cloud.doc.search.datastore;
+package com.havo.cloud.doc.search.datastore.cloud.docs;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
 import java.util.List;
 
-@ConfigurationProperties(prefix = "docs")
 @Configuration
-public class DocsConfigProperties {
+@ConfigurationProperties(prefix = "gcp.docs")
+public class GoogleCloudDocsConfigProperties {
     private String userId;
     private String secretPath;
     private List<String> supportedFiles;

@@ -1,10 +1,10 @@
-package com.havo.cloud.doc.search.datastore;
+package com.havo.cloud.doc.search.datastore.index;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
-@ConfigurationProperties(prefix = "elastic")
 @Configuration
+@ConfigurationProperties(prefix = "elastic.index")
 public class ElasticConfigProperties {
     private String serverUrl;
     private String apiKey;

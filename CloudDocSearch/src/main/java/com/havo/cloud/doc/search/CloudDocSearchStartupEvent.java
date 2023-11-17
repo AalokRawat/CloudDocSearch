@@ -1,6 +1,7 @@
 package com.havo.cloud.doc.search;
 
 import com.havo.cloud.doc.search.service.CloudDocSearchProcessor;
+import com.havo.cloud.doc.search.service.CloudDocSearchProcessorImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
@@ -20,7 +21,7 @@ public class CloudDocSearchStartupEvent {
     private final CloudDocSearchProcessor searchProcessor;
 
     @Autowired
-    public CloudDocSearchStartupEvent(CloudDocSearchProcessor searchProcessor) {
+    public CloudDocSearchStartupEvent(CloudDocSearchProcessorImpl searchProcessor) {
         this.searchProcessor = searchProcessor;
     }
 
